@@ -46,7 +46,7 @@ Route::get('/admin/kategori/edit/{id}', [AdminController::class, 'editKategori']
 
 Route::post('/admin/kategori/update/{id}', [AdminController::class, 'updateKategori']);
 
-Route::get('/admin/kategori/hapus/{id}', [AdminController::class, 'hapusKategori']);
+Route::delete('/admin/kategori/delete/{id}', [AdminController::class, 'hapusKategori']);
 
 
 Route::get('/admin/wisata', [AdminController::class, 'wisata']);
@@ -59,7 +59,7 @@ Route::get('/admin/wisata/edit/{id}', [AdminController::class, 'editWisata']);
 
 Route::post('/admin/wisata/update/{id}', [AdminController::class, 'updateWisata']);
 
-Route::get('/admin/wisata/hapus/{id}', [AdminController::class, 'hapusWisata']);
+Route::delete('/admin/wisata/delete/{id}', [AdminController::class, 'hapusWisata']);
 
 Route::get('/admin/galeri', [AdminController::class, 'galeri']);
 
@@ -67,7 +67,7 @@ Route::get('/admin/galeri/tambah', [AdminController::class, 'tambahGaleri']);
 
 Route::post('/admin/galeri/simpan', [AdminController::class, 'simpanGaleri']);
 
-Route::get('/admin/galeri/hapus/{id}', [AdminController::class, 'hapusGaleri']);
+Route::delete('/admin/galeri/delete/{id}', [AdminController::class, 'hapusGaleri']);
 
 Route::get('/admin/galeri/edit/{id}', [AdminController::class, 'editGaleri']);
 
@@ -75,7 +75,7 @@ Route::post('/admin/galeri/update/{id}', [AdminController::class, 'updateGaleri'
 
 Route::get('/admin/ulasan', [AdminController::class, 'ulasan']);
 
-Route::get('/admin/ulasan/hapus/{id}', [AdminController::class, 'hapusUlasan']);
+Route::delete('/admin/ulasan/delete/{id}', [AdminController::class, 'hapusUlasan']);
 
 Route::get('/admin/user', [AdminController::class, 'user']);
 
@@ -87,7 +87,8 @@ Route::get('/admin/user/edit/{id}', [AdminController::class, 'editUser']);
 
 Route::post('/admin/user/update/{id}', [AdminController::class, 'updateUser']);
 
-Route::get('/admin/user/hapus/{id}', [AdminController::class, 'hapusUser']);
+
+Route::delete('/admin/user/delete/{id}', [AdminController::class, 'hapusUser']);
 Route::get('/admin/wisata', [AdminController::class, 'wisata']);
 Route::get('/admin/wisata/tambah', [AdminController::class, 'tambahWisata']);
 Route::post('/admin/wisata/simpan', [AdminController::class, 'simpanWisata']);
