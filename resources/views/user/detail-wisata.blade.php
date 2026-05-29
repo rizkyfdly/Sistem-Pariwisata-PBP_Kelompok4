@@ -256,6 +256,19 @@
                      ">
                 </div>
 
+                <div class="mt-3">
+
+                    <a href="https://www.google.com/maps/dir/?api=1&destination={{ $wisata->latitude }},{{ $wisata->longitude }}"
+                    target="_blank"
+                    class="btn btn-success rounded-pill px-4">
+
+                        <i class="bi bi-geo-alt-fill me-1"></i>
+                        Lihat Detail Lokasi
+
+                    </a>
+
+                </div>
+
             </div>
 
         </div>

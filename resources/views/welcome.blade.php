@@ -13,6 +13,10 @@
 
     <style>
 
+        body{
+            padding-top: 95px;
+        }
+
         .wisata-card{
             transition: 0.3s ease;
         }
@@ -46,7 +50,7 @@
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg bg-white shadow-sm py-3">
+<nav class="navbar navbar-expand-lg bg-white shadow-sm py-3 fixed-top">
 
     <div class="container">
 

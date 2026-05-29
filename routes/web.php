@@ -9,6 +9,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/soap/wisata', [SoapController::class, 'wisata']);
 
+Route::get('/soap/ulasan', [SoapController::class, 'getAllUlasan']);
+
+Route::get('/soap/ulasan/{id}', [SoapController::class, 'getUlasanById']);
+
 Route::get('/', function () {
     return view('welcome');
 });
